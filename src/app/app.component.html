@@ -4,20 +4,18 @@
 
   <div id="content">
 
+	  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate class="form-group">
 
-  		<li routerLinkActive="active">
-          <a routerLink="/posts">Simple Form</a>
-      </li>
-
-
-	  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
-      <input name="first" ngModel required #first="ngModel">
-      <input name="last" ngModel required>
+      <label for="firstname">First name</label>
+      <input name="firstname" ngModel required #first="ngModel" id="firstname" class="form-control">
+      <label for="lastname">Last name</label>
+      <input name="lastname" ngModel required id="lastname" class="form-control">
+<br>
       <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Submit</button>
     </form>
     {{f.valid}}
 
-    <button (click)="open()">Submit</button>
+    <!-- <button (click)="open()">Submit</button> -->
 
 
     <router-outlet></router-outlet>
