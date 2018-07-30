@@ -31,3 +31,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Guides:
 1. https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course
+
+STEPS:
+1. npm install
+2. ng build --prod
+3. node server.js
+
