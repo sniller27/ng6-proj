@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 import {NgForm} from '@angular/forms';
-// import { Title }     from '@angular/platform-browser';
 
 //httpclient module for making requests
 import { DataService } from './data.service';

@@ -9,7 +9,7 @@ import { PostsComponent } from './posts/posts.component';
 //routes
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: UsersComponent
   },
   {

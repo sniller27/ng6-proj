@@ -5,7 +5,12 @@
   <div id="content">
 
 
-	<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  		<li routerLinkActive="active">
+          <a routerLink="/posts">Simple Form</a>
+      </li>
+
+
+	  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
       <input name="first" ngModel required #first="ngModel">
       <input name="last" ngModel required>
       <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Submit</button>
